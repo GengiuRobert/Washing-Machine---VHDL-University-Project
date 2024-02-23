@@ -1,0 +1,1034 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="3.8.0" version="1.0">
+  This file is intended to be loaded by Logisim-evolution v3.8.0(https://github.com/logisim-evolution/).
+
+  <lib desc="#Wiring" name="0">
+    <tool name="Pin">
+      <a name="appearance" val="classic"/>
+    </tool>
+  </lib>
+  <lib desc="#Gates" name="1"/>
+  <lib desc="#Plexers" name="2"/>
+  <lib desc="#Arithmetic" name="3"/>
+  <lib desc="#Memory" name="4"/>
+  <lib desc="#I/O" name="5"/>
+  <lib desc="#TTL" name="6"/>
+  <lib desc="#TCL" name="7"/>
+  <lib desc="#Base" name="8"/>
+  <lib desc="#BFH-Praktika" name="9"/>
+  <lib desc="#Input/Output-Extra" name="10"/>
+  <lib desc="#Soc" name="11"/>
+  <main name="main"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool lib="8" map="Button2" name="Poke Tool"/>
+    <tool lib="8" map="Button3" name="Menu Tool"/>
+    <tool lib="8" map="Ctrl Button1" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool lib="8" name="Poke Tool"/>
+    <tool lib="8" name="Edit Tool"/>
+    <tool lib="8" name="Wiring Tool"/>
+    <tool lib="8" name="Text Tool"/>
+    <sep/>
+    <tool lib="0" name="Pin"/>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+    </tool>
+    <sep/>
+    <tool lib="1" name="NOT Gate"/>
+    <tool lib="1" name="AND Gate"/>
+    <tool lib="1" name="OR Gate"/>
+    <tool lib="1" name="XOR Gate"/>
+    <tool lib="1" name="NAND Gate"/>
+    <tool lib="1" name="NOR Gate"/>
+    <sep/>
+    <tool lib="4" name="D Flip-Flop"/>
+    <tool lib="4" name="Register"/>
+  </toolbar>
+  <circuit name="main">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="main"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="downloadBoard" val="BASYS3_CB17"/>
+    <a name="downloadFrequency" val="2083333.3333333333"/>
+    <a name="simulationFrequency" val="2048000.0"/>
+    <boardmap boardname="BASYS3_CB17">
+      <mc key="/Input_1" map="78,323"/>
+      <mc key="/Input_2" map="117,323"/>
+      <mc key="/Input_3" map="228,323"/>
+      <mc key="/Input_4" map="268,323"/>
+      <mc key="/Input_5" map="305,323"/>
+      <mc key="/Input_6" map="341,323"/>
+      <mc key="/Input_7" map="497,323"/>
+      <mc key="/Input_8" map="321,237"/>
+      <mc key="/Input_9" map="535,323"/>
+      <mc key="/Input_bus_1" pmap="456_323_0,417_323_0,382_323_0"/>
+      <mc key="/Input_bus_2" pmap="192_323_0,154_323_0"/>
+      <mc key="/LED_1" map="577,295"/>
+      <mc key="/LED_2" map="278,295"/>
+      <mc key="/LED_3" map="241,295"/>
+      <mc key="/LED_4" map="92,295"/>
+      <mc key="/L_7_Segment_Display_1" pmap="136_245_0,154_248_0,154_262_0,136_274_0,130_263_0,130_249_0,138_258_0,160_272_0"/>
+      <mc key="/Output_bus_1" pmap="130_234_0,180_234_0,225_234_0,273_234_0"/>
+    </boardmap>
+    <comp lib="0" loc="(100,690)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Input_7"/>
+    </comp>
+    <comp lib="0" loc="(1130,220)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Input_1"/>
+    </comp>
+    <comp lib="0" loc="(1170,320)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Input_2"/>
+    </comp>
+    <comp lib="0" loc="(1180,590)" name="Ground"/>
+    <comp lib="0" loc="(140,190)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Input_bus_2"/>
+      <a name="width" val="2"/>
+    </comp>
+    <comp lib="0" loc="(170,760)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Input_8"/>
+    </comp>
+    <comp lib="0" loc="(210,330)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Input_5"/>
+    </comp>
+    <comp lib="0" loc="(340,770)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Input_9"/>
+    </comp>
+    <comp lib="0" loc="(460,240)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Input_4"/>
+    </comp>
+    <comp lib="0" loc="(490,180)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Input_3"/>
+    </comp>
+    <comp lib="0" loc="(620,330)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Input_6"/>
+    </comp>
+    <comp lib="0" loc="(680,670)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Output_bus_1"/>
+      <a name="output" val="true"/>
+      <a name="width" val="4"/>
+    </comp>
+    <comp lib="0" loc="(760,70)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Input_bus_1"/>
+      <a name="width" val="3"/>
+    </comp>
+    <comp lib="0" loc="(920,620)" name="Splitter">
+      <a name="fanout" val="7"/>
+      <a name="incoming" val="7"/>
+    </comp>
+    <comp lib="5" loc="(1030,550)" name="7-Segment Display">
+      <a name="label" val="L_7_Segment_Display_1"/>
+    </comp>
+    <comp lib="5" loc="(1360,120)" name="LED">
+      <a name="label" val="LED_4"/>
+    </comp>
+    <comp lib="5" loc="(700,120)" name="LED">
+      <a name="label" val="LED_3"/>
+    </comp>
+    <comp lib="5" loc="(840,10)" name="LED">
+      <a name="label" val="LED_2"/>
+    </comp>
+    <comp lib="5" loc="(960,300)" name="LED">
+      <a name="label" val="LED_1"/>
+    </comp>
+    <comp loc="(1020,50)" name="mux_moduri_automate">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="mux_moduri_automate_1"/>
+    </comp>
+    <comp loc="(1280,150)" name="activINACTIV">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="activinactiv_1"/>
+    </comp>
+    <comp loc="(1420,230)" name="and_gate">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="and_gate_1"/>
+    </comp>
+    <comp loc="(310,520)" name="dcd_suma_afisor">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="dcd_suma_afisor_1"/>
+    </comp>
+    <comp loc="(340,670)" name="divizor_frecventa">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="divizor_frecventa_1"/>
+    </comp>
+    <comp loc="(400,180)" name="mux_temp">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="mux_temp_1"/>
+    </comp>
+    <comp loc="(460,310)" name="counter_timp_automat1">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="counter_timp_automat1_1"/>
+    </comp>
+    <comp loc="(610,750)" name="frecventa_rest">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="frecventa_rest_1"/>
+    </comp>
+    <comp loc="(620,530)" name="mux_alege_cifra">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="mux_alege_cifra_1"/>
+    </comp>
+    <comp loc="(640,50)" name="selectMODE">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="selectmode_1"/>
+    </comp>
+    <comp loc="(650,670)" name="mux_anod">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="mux_anod_1"/>
+    </comp>
+    <comp loc="(720,160)" name="spalare_clatire_centrifugare">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="spalare_clatire_centrifugare_1"/>
+    </comp>
+    <comp loc="(900,490)" name="dcd_hexa_7seg_afisor">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="dcd_hexa_7seg_afisor_1"/>
+    </comp>
+    <comp loc="(940,310)" name="numarator_1minut">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="numarator_1minut_1"/>
+    </comp>
+    <wire from="(100,690)" to="(120,690)"/>
+    <wire from="(1000,570)" to="(1000,620)"/>
+    <wire from="(1000,620)" to="(1030,620)"/>
+    <wire from="(1020,50)" to="(1020,450)"/>
+    <wire from="(1030,520)" to="(1030,550)"/>
+    <wire from="(1030,610)" to="(1030,620)"/>
+    <wire from="(1040,500)" to="(1040,550)"/>
+    <wire from="(1040,610)" to="(1040,630)"/>
+    <wire from="(1050,150)" to="(1050,190)"/>
+    <wire from="(1050,150)" to="(1060,150)"/>
+    <wire from="(1050,190)" to="(1140,190)"/>
+    <wire from="(1050,520)" to="(1050,550)"/>
+    <wire from="(1050,520)" to="(1100,520)"/>
+    <wire from="(1050,610)" to="(1050,640)"/>
+    <wire from="(1060,490)" to="(1060,550)"/>
+    <wire from="(1060,610)" to="(1060,630)"/>
+    <wire from="(1060,630)" to="(1130,630)"/>
+    <wire from="(1100,520)" to="(1100,650)"/>
+    <wire from="(1130,220)" to="(1140,220)"/>
+    <wire from="(1130,560)" to="(1130,630)"/>
+    <wire from="(1130,560)" to="(1180,560)"/>
+    <wire from="(1140,190)" to="(1140,220)"/>
+    <wire from="(1170,200)" to="(1170,230)"/>
+    <wire from="(1170,200)" to="(1280,200)"/>
+    <wire from="(1170,230)" to="(1200,230)"/>
+    <wire from="(1170,250)" to="(1170,320)"/>
+    <wire from="(1170,250)" to="(1200,250)"/>
+    <wire from="(1180,560)" to="(1180,590)"/>
+    <wire from="(1280,150)" to="(1280,160)"/>
+    <wire from="(1280,160)" to="(1280,200)"/>
+    <wire from="(1280,160)" to="(1300,160)"/>
+    <wire from="(1300,120)" to="(1300,160)"/>
+    <wire from="(1300,120)" to="(1360,120)"/>
+    <wire from="(140,130)" to="(140,140)"/>
+    <wire from="(140,130)" to="(650,130)"/>
+    <wire from="(140,140)" to="(140,160)"/>
+    <wire from="(140,160)" to="(170,160)"/>
+    <wire from="(140,190)" to="(170,190)"/>
+    <wire from="(1420,30)" to="(1420,230)"/>
+    <wire from="(170,160)" to="(170,180)"/>
+    <wire from="(170,180)" to="(180,180)"/>
+    <wire from="(170,190)" to="(170,200)"/>
+    <wire from="(170,200)" to="(180,200)"/>
+    <wire from="(170,760)" to="(180,760)"/>
+    <wire from="(180,410)" to="(180,450)"/>
+    <wire from="(180,410)" to="(240,410)"/>
+    <wire from="(180,450)" to="(1020,450)"/>
+    <wire from="(180,760)" to="(180,790)"/>
+    <wire from="(210,330)" to="(240,330)"/>
+    <wire from="(240,290)" to="(240,310)"/>
+    <wire from="(240,290)" to="(570,290)"/>
+    <wire from="(310,520)" to="(400,520)"/>
+    <wire from="(310,540)" to="(400,540)"/>
+    <wire from="(310,560)" to="(400,560)"/>
+    <wire from="(310,580)" to="(400,580)"/>
+    <wire from="(340,670)" to="(390,670)"/>
+    <wire from="(340,770)" to="(390,770)"/>
+    <wire from="(370,740)" to="(370,750)"/>
+    <wire from="(370,750)" to="(390,750)"/>
+    <wire from="(390,610)" to="(390,670)"/>
+    <wire from="(390,610)" to="(400,610)"/>
+    <wire from="(390,670)" to="(430,670)"/>
+    <wire from="(40,10)" to="(40,370)"/>
+    <wire from="(40,10)" to="(670,10)"/>
+    <wire from="(40,370)" to="(240,370)"/>
+    <wire from="(400,180)" to="(410,180)"/>
+    <wire from="(400,30)" to="(1420,30)"/>
+    <wire from="(400,30)" to="(400,50)"/>
+    <wire from="(400,50)" to="(420,50)"/>
+    <wire from="(400,520)" to="(400,530)"/>
+    <wire from="(400,540)" to="(400,550)"/>
+    <wire from="(400,560)" to="(400,570)"/>
+    <wire from="(400,580)" to="(400,590)"/>
+    <wire from="(410,160)" to="(410,180)"/>
+    <wire from="(410,160)" to="(500,160)"/>
+    <wire from="(460,210)" to="(460,240)"/>
+    <wire from="(460,210)" to="(480,210)"/>
+    <wire from="(460,310)" to="(490,310)"/>
+    <wire from="(460,330)" to="(530,330)"/>
+    <wire from="(480,200)" to="(480,210)"/>
+    <wire from="(480,200)" to="(500,200)"/>
+    <wire from="(490,180)" to="(500,180)"/>
+    <wire from="(490,310)" to="(490,500)"/>
+    <wire from="(50,140)" to="(140,140)"/>
+    <wire from="(50,140)" to="(50,350)"/>
+    <wire from="(50,350)" to="(240,350)"/>
+    <wire from="(50,670)" to="(120,670)"/>
+    <wire from="(50,670)" to="(50,740)"/>
+    <wire from="(50,740)" to="(370,740)"/>
+    <wire from="(50,740)" to="(50,790)"/>
+    <wire from="(50,790)" to="(180,790)"/>
+    <wire from="(530,330)" to="(530,350)"/>
+    <wire from="(530,350)" to="(720,350)"/>
+    <wire from="(570,290)" to="(570,410)"/>
+    <wire from="(570,290)" to="(680,290)"/>
+    <wire from="(570,410)" to="(670,410)"/>
+    <wire from="(610,750)" to="(670,750)"/>
+    <wire from="(620,330)" to="(720,330)"/>
+    <wire from="(620,530)" to="(660,530)"/>
+    <wire from="(640,50)" to="(670,50)"/>
+    <wire from="(640,70)" to="(650,70)"/>
+    <wire from="(650,100)" to="(650,130)"/>
+    <wire from="(650,100)" to="(690,100)"/>
+    <wire from="(650,670)" to="(680,670)"/>
+    <wire from="(650,70)" to="(650,100)"/>
+    <wire from="(660,490)" to="(660,530)"/>
+    <wire from="(660,490)" to="(680,490)"/>
+    <wire from="(670,10)" to="(670,50)"/>
+    <wire from="(670,410)" to="(670,750)"/>
+    <wire from="(670,50)" to="(760,50)"/>
+    <wire from="(680,290)" to="(680,310)"/>
+    <wire from="(680,310)" to="(720,310)"/>
+    <wire from="(690,100)" to="(690,120)"/>
+    <wire from="(690,120)" to="(700,120)"/>
+    <wire from="(720,160)" to="(730,160)"/>
+    <wire from="(730,160)" to="(730,270)"/>
+    <wire from="(760,10)" to="(760,50)"/>
+    <wire from="(760,10)" to="(840,10)"/>
+    <wire from="(760,50)" to="(800,50)"/>
+    <wire from="(760,70)" to="(800,70)"/>
+    <wire from="(80,270)" to="(730,270)"/>
+    <wire from="(80,270)" to="(80,390)"/>
+    <wire from="(80,390)" to="(240,390)"/>
+    <wire from="(80,500)" to="(490,500)"/>
+    <wire from="(80,500)" to="(80,520)"/>
+    <wire from="(80,520)" to="(90,520)"/>
+    <wire from="(900,490)" to="(910,490)"/>
+    <wire from="(900,530)" to="(900,620)"/>
+    <wire from="(900,530)" to="(910,530)"/>
+    <wire from="(900,620)" to="(920,620)"/>
+    <wire from="(910,490)" to="(910,530)"/>
+    <wire from="(940,310)" to="(950,310)"/>
+    <wire from="(940,520)" to="(1030,520)"/>
+    <wire from="(940,520)" to="(940,550)"/>
+    <wire from="(940,560)" to="(960,560)"/>
+    <wire from="(940,570)" to="(1000,570)"/>
+    <wire from="(940,580)" to="(990,580)"/>
+    <wire from="(940,590)" to="(970,590)"/>
+    <wire from="(940,600)" to="(950,600)"/>
+    <wire from="(940,610)" to="(940,650)"/>
+    <wire from="(940,650)" to="(1100,650)"/>
+    <wire from="(950,300)" to="(950,310)"/>
+    <wire from="(950,300)" to="(960,300)"/>
+    <wire from="(950,490)" to="(1060,490)"/>
+    <wire from="(950,490)" to="(950,600)"/>
+    <wire from="(960,500)" to="(1040,500)"/>
+    <wire from="(960,500)" to="(960,560)"/>
+    <wire from="(970,590)" to="(970,640)"/>
+    <wire from="(970,640)" to="(1050,640)"/>
+    <wire from="(990,580)" to="(990,630)"/>
+    <wire from="(990,630)" to="(1040,630)"/>
+  </circuit>
+  <vhdl name="ddddddddddddd">--------------------------------------------------------------------------------
+-- Project :
+-- File    :
+-- Autor   :
+-- Date    :
+--
+--------------------------------------------------------------------------------
+-- Description :
+--
+--------------------------------------------------------------------------------
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY ddddddddddddd IS
+  PORT (
+ enable: in std_logic;
+ input: in std_logic;
+ o: out std_logic
+    );
+END ddddddddddddd;
+
+--------------------------------------------------------------------------------
+--Complete your VHDL description below
+--------------------------------------------------------------------------------
+
+ARCHITECTURE TypeArchitecture OF ddddddddddddd IS
+
+BEGIN
+process(enable,input)
+begin
+if enable='1' then
+	if input = '1' then o &lt;= '1';
+	elsif input = '0' then o &lt;= '0';
+	end if;
+end if;
+
+end process;
+
+END TypeArchitecture;
+</vhdl>
+  <vhdl name="selectMODE">--------------------------------------------------------------------------------
+-- Project :
+-- File    :
+-- Autor   :
+-- Date    :
+--
+--------------------------------------------------------------------------------
+-- Description :
+--
+--------------------------------------------------------------------------------
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY selectMODE IS
+  PORT (
+  Intrare: in std_logic;
+  o1: out std_logic;
+  o2: out std_logic
+    );
+END selectMODE;
+
+--------------------------------------------------------------------------------
+--Complete your VHDL description below
+--------------------------------------------------------------------------------
+
+ARCHITECTURE TypeArchitecture OF selectMODE IS
+
+BEGIN
+process(Intrare)
+begin
+if Intrare = '1' then o1 &lt;= '1'; o2&lt;= '0';
+elsif Intrare = '0' then  o2 &lt;= '1'; o1 &lt;= '0';
+end if;
+end process;
+
+END TypeArchitecture;
+</vhdl>
+  <vhdl name="mux_temp">--------------------------------------------------------------------------------
+-- Project :
+-- File    :
+-- Autor   :
+-- Date    :
+--
+--------------------------------------------------------------------------------
+-- Description :
+--
+--------------------------------------------------------------------------------
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+USE ieee.std_logic_unsigned.all;
+
+ENTITY mux_temp IS
+  PORT (
+  enable : in std_logic;
+  sel: in std_logic_vector ( 1 downto 0);
+  output: out std_logic_vector(7 downto 0)
+    );
+END mux_temp;
+
+--------------------------------------------------------------------------------
+--Complete your VHDL description below
+--------------------------------------------------------------------------------
+
+ARCHITECTURE TypeArchitecture OF mux_temp IS
+
+BEGIN
+
+process(enable,sel)
+begin
+if enable ='1' then
+case sel is
+when "00" =&gt; output&lt;="00011110"; -- 30 grade -&gt; 30 secunde
+when "01" =&gt; output&lt;="00110010"; -- 40 -&gt; 50 secunde
+when "10" =&gt; output&lt;="01000110"; -- 60 -&gt; 70 secunde
+when others =&gt; output&lt;="10010110"; -- 90 -&gt; 150 secunde
+end case;
+end if;
+end process;
+
+END TypeArchitecture;
+</vhdl>
+  <vhdl name="spalare_clatire_centrifugare">--------------------------------------------------------------------------------
+-- Project :
+-- File    :
+-- Autor   :
+-- Date    :
+--
+--------------------------------------------------------------------------------
+-- Description :
+--
+--------------------------------------------------------------------------------
+
+LIBRARY ieee;
+USE ieee.std_logic_unsigned.all;
+USE ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+
+ENTITY spalare_clatire_centrifugare IS
+  PORT (
+  input: in std_logic_vector (7 downto 0);
+  clatire_suplimentara : in std_logic;
+  prespalare_suplimentara: in std_logic;
+  output: out std_logic_vector (11 downto 0)
+  
+    );
+END spalare_clatire_centrifugare;
+
+--------------------------------------------------------------------------------
+--Complete your VHDL description below
+--------------------------------------------------------------------------------
+
+ARCHITECTURE TypeArchitecture OF spalare_clatire_centrifugare IS
+
+BEGIN
+
+process(input,clatire_suplimentara,prespalare_suplimentara)
+variable auxiliar : std_logic_vector(11 downto 0);
+begin
+auxiliar := "0000" &amp; input;
+auxiliar := auxiliar + "100101100000"; -- 40 de minute in sec
+if (clatire_suplimentara ='1') then
+   auxiliar := auxiliar+"001001011000";
+end if;
+if (prespalare_suplimentara ='1') then
+  auxiliar := auxiliar+"001001011000";
+   end if;
+  output &lt;= auxiliar;
+   end process;
+
+END TypeArchitecture;
+</vhdl>
+  <vhdl name="mux_moduri_automate">--------------------------------------------------------------------------------
+-- Project :
+-- File    :
+-- Autor   :
+-- Date    :
+--
+--------------------------------------------------------------------------------
+-- Description :
+--
+--------------------------------------------------------------------------------
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+USE ieee.std_logic_unsigned.all;
+
+ENTITY mux_moduri_automate IS
+  PORT (
+ enable:in std_logic;
+ sel:in std_logic_vector (2 downto 0);
+ iesire: out std_logic_vector (11 downto 0)
+    );
+END mux_moduri_automate;
+
+--------------------------------------------------------------------------------
+--Complete your VHDL description below
+--------------------------------------------------------------------------------
+
+ARCHITECTURE TypeArchitecture OF mux_moduri_automate IS
+
+BEGIN
+
+process(enable,sel)
+begin
+if (enable='1') then
+   case sel is 
+   when "000" =&gt; iesire &lt;="100101101111"; -- 30 de grade, spalare rapida
+   when "001" =&gt; iesire &lt;="100110001101"; -- 60 de grade, camasi
+   when "010" =&gt; iesire &lt;="101111010001"; -- 40 de grade, culori inchise
+   when "011" =&gt; iesire &lt;="101111010001"; -- 40 de grade, rufe murdare
+   when "100" =&gt; iesire &lt;="110000000011"; -- 90 de grade, antialergic
+   when others =&gt;iesire &lt;="000000000000";
+  end case ;
+end if;
+end process;
+
+END TypeArchitecture;
+</vhdl>
+  <vhdl name="counter_timp_automat1">--------------------------------------------------------------------------------
+-- Project :
+-- File    :
+-- Autor   :
+-- Date    :
+--
+--------------------------------------------------------------------------------
+-- Description :
+--
+--------------------------------------------------------------------------------
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.std_logic_unsigned.all;
+use ieee.std_logic_arith.all;
+
+
+ENTITY counter_timp_automat1 IS
+  PORT (
+  clock:in std_logic;
+  reset,enable,enable2: in std_logic;
+  input: in std_logic_vector (11 downto 0);
+  input2: in std_logic_vector (11 downto 0);
+  output: out std_logic_vector (11 downto 0);
+  iesire: out std_logic
+    );
+END counter_timp_automat1;
+
+--------------------------------------------------------------------------------
+--Complete your VHDL description below
+--------------------------------------------------------------------------------
+
+ARCHITECTURE TypeArchitecture OF counter_timp_automat1 IS
+
+BEGIN
+
+process(clock,reset,enable,enable2)
+variable auxiliar : std_logic_vector(11 downto 0):=input;
+variable auxiliar2 : std_logic_vector(11 downto 0):=input2;
+begin
+
+if enable='1' then
+if (auxiliar /= 0) then
+    if(reset ='1') then
+    auxiliar := input;
+    elsif (clock'event and clock='1')
+    then auxiliar:=auxiliar - 1;
+    end if;
+end if;
+output&lt;=auxiliar;
+if auxiliar = "000000000000" then iesire &lt;='1';
+end if;
+end if;
+
+
+if enable2='1' then
+if (auxiliar2 /= 0) then
+    if(reset ='1') then
+    auxiliar2 := input2;
+    elsif (clock'event and clock='1')
+    then auxiliar2:=auxiliar2 - 1;
+    end if;
+end if;
+output&lt;=auxiliar2;
+if auxiliar2 = "000000000000" then iesire &lt;='1';
+end if;
+end if;
+end process;
+
+END TypeArchitecture;
+</vhdl>
+  <vhdl name="frecventa_rest">--------------------------------------------------------------------------------
+-- Project :
+-- File    :
+-- Autor   :
+-- Date    :
+--
+--------------------------------------------------------------------------------
+-- Description :
+--
+--------------------------------------------------------------------------------
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.std_logic_UNSIGNED.all;
+
+ENTITY frecventa_rest IS
+  PORT (
+  CLOCK_IN : IN STD_LOGIC;
+  reset: in std_logic;
+  iesire: OUT STD_LOGIC
+    );
+END frecventa_rest;
+
+--------------------------------------------------------------------------------
+--Complete your VHDL description below
+--------------------------------------------------------------------------------
+
+ARCHITECTURE TypeArchitecture OF frecventa_rest IS
+
+SIGNAL TMP: STD_LOGIC :='0';
+BEGIN
+PROCESS(CLOCK_IN,reset)
+
+variable aux : integer :=0;
+BEGIN
+
+if reset='1' then
+iesire&lt;='0';
+aux:=0;
+elsif CLOCK_IN='1' and CLOCK_IN'event then
+if aux = 1_000_000 then
+TMP&lt;=not TMP;
+aux:=0;
+else aux:=aux+1;
+end if;
+end if;
+
+iesire&lt;=TMP;
+
+END PROCESS;
+
+
+
+END TypeArchitecture;
+</vhdl>
+  <vhdl name="divizor_frecventa">--------------------------------------------------------------------------------
+-- Project :
+-- File    :
+-- Autor   :
+-- Date    :
+--
+--------------------------------------------------------------------------------
+-- Description :
+--
+--------------------------------------------------------------------------------
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+use ieee.numeric_std.all;
+ENTITY divizor_frecventa IS
+  PORT (
+clk, reset: in std_logic;
+        selectie: out std_logic_vector(1 downto 0)
+    );
+END divizor_frecventa;
+
+--------------------------------------------------------------------------------
+--Complete your VHDL description below
+--------------------------------------------------------------------------------
+
+ARCHITECTURE TypeArchitecture OF divizor_frecventa IS
+signal numarator: std_logic_vector(15 downto 0):="0000000000000000";
+BEGIN
+process(clk, reset)
+variable aux: integer:=0;
+begin
+if(reset='1') then numarator&lt;="0000000000000000";
+elsif (clk='1' and clk'event) then 
+         aux:=conv_integer(numarator);
+         if(aux=65_535) then numarator&lt;="0000000000000000";
+         else numarator&lt;=numarator+"0000000000000001";
+         end if;
+selectie&lt;=numarator(14 downto 13);
+end if;
+end process;
+
+
+END TypeArchitecture;</vhdl>
+  <vhdl name="mux_anod">--------------------------------------------------------------------------------
+-- Project :
+-- File    :
+-- Autor   :
+-- Date    :
+--
+--------------------------------------------------------------------------------
+-- Description :
+--
+--------------------------------------------------------------------------------
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY mux_anod IS
+  PORT (
+  		sel: in std_logic_vector(1 downto 0);
+  		out_anod:out std_logic_vector(3 downto 0)
+    );
+END mux_anod;
+
+--------------------------------------------------------------------------------
+--Complete your VHDL description below
+--------------------------------------------------------------------------------
+
+ARCHITECTURE TypeArchitecture OF mux_anod IS
+
+BEGIN
+
+		with sel select out_anod&lt;= "0001" when "00",
+							  "0010" when "01",
+							  "0100" when "10",
+							  "1000" when "11",
+							  "0000" when others;
+END TypeArchitecture;
+</vhdl>
+  <vhdl name="mux_alege_cifra">--------------------------------------------------------------------------------
+-- Project :
+-- File    :
+-- Autor   :
+-- Date    :
+--
+--------------------------------------------------------------------------------
+-- Description :
+--
+--------------------------------------------------------------------------------
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY mux_alege_cifra IS
+  PORT (
+  		mii_s,sute_s,zeci_s,unitati_s:in std_logic_vector(3 downto 0);
+  		sel:in std_logic_vector(1 downto 0);
+  		out_mux:out std_logic_vector(3 downto 0)
+    );
+END mux_alege_cifra;
+
+
+
+ARCHITECTURE TypeArchitecture OF mux_alege_cifra IS
+
+BEGIN
+
+with sel select out_mux&lt;=unitati_s when "00",
+					zeci_s when "01",
+					sute_s when "10",
+					mii_s when others;
+
+
+END TypeArchitecture;
+
+</vhdl>
+  <vhdl name="dcd_suma_afisor">
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.std_logic_unsigned.all;
+use ieee.numeric_std.all;
+use ieee.numeric_std.all;
+
+ENTITY dcd_suma_afisor IS
+	PORT (
+		input : in std_logic_vector(11 downto 0);
+		unit, zeci, sute, mii : out std_logic_vector(3 downto 0)
+    	);
+END dcd_suma_afisor;
+
+
+ARCHITECTURE arh OF dcd_suma_afisor IS
+
+	signal a : natural;
+BEGIN
+	a &lt;= conv_integer(input);
+	unit &lt;= std_logic_vector(to_unsigned(a rem 10, 4));
+	zeci &lt;= std_logic_vector(to_unsigned(a/10 rem 10, 4));
+	sute &lt;= std_logic_vector(to_unsigned(a/100 rem 10, 4));
+	mii &lt;= std_logic_vector(to_unsigned(a/1000 rem 10, 4));
+END arh;
+</vhdl>
+  <vhdl name="numarator_1minut">--------------------------------------------------------------------------------
+-- Project :
+-- File    :
+-- Autor   :
+-- Date    :
+--
+--------------------------------------------------------------------------------
+-- Description :
+--
+--------------------------------------------------------------------------------
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+
+ENTITY numarator_1minut IS
+  PORT (
+   clock,reset:in std_logic;
+ -- output:out std_logic_vector(5 downto 0);
+  enable:in std_logic;
+  deschidere_usa : out std_logic
+    );
+END numarator_1minut;
+
+--------------------------------------------------------------------------------
+--Complete your VHDL description below
+--------------------------------------------------------------------------------
+
+ARCHITECTURE TypeArchitecture OF numarator_1minut IS
+
+signal aux23: std_logic;
+begin
+
+  process(clock, reset,enable)
+    variable aux: std_logic_vector(5 downto 0) := "000000";
+  begin
+  if enable ='1' then
+    if reset = '1' then
+      aux := "000000";
+    elsif (clock'event and clock = '1') then
+      if aux = "111100" then
+        aux := "111111"; -- Opriți numărătorul
+      elsif aux /= "111111" then
+        aux := aux + 1; -- Numărătorul continuă să crească
+      end if;
+    end if;
+    if(aux="111100") then
+    aux23 &lt;='1';
+
+    end if;
+    
+    
+    
+    end if;
+  end process;
+deschidere_usa &lt;= aux23;
+
+END TypeArchitecture;
+</vhdl>
+  <vhdl name="dcd_hexa_7seg_afisor">--------------------------------------------------------------------------------
+-- Project :
+-- File    :
+-- Autor   :
+-- Date    :
+--
+--------------------------------------------------------------------------------
+-- Description :
+--
+--------------------------------------------------------------------------------
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY dcd_hexa_7seg_afisor IS
+  	PORT (
+  		input : in std_logic_vector(3 downto 0);
+  		output : out std_logic_vector(6 downto 0)
+    	);
+END dcd_hexa_7seg_afisor;
+
+--------------------------------------------------------------------------------
+--Complete your VHDL description below
+--------------------------------------------------------------------------------
+
+ARCHITECTURE arh OF dcd_hexa_7seg_afisor IS
+
+BEGIN
+
+	output &lt;= 	"1111110" when input = x"0" else
+				"0110000" when input = x"1" else
+				"1101101" when input = x"2" else
+				"1111001" when input = x"3" else
+				"0110011" when input = x"4" else
+				"1011011" when input = x"5" else
+				"1011111" when input = x"6" else
+				"1110000" when input = x"7" else
+				"1111111" when input = x"8" else
+				"1111011" when input = x"9" else
+				"1110111" when input = x"A" else
+				"0011111" when input = x"B" else
+				"1001110" when input = x"C" else
+				"0111101" when input = x"D" else
+				"1001111" when input = x"E" else
+				"1000111" when input = x"F"; 
+END arh;
+</vhdl>
+  <vhdl name="activINACTIV">--------------------------------------------------------------------------------
+-- Project :
+-- File    :
+-- Autor   :
+-- Date    :
+--
+--------------------------------------------------------------------------------
+-- Description :
+--
+--------------------------------------------------------------------------------
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.std_logic_unsigned.all;
+
+
+ENTITY activINACTIV IS
+  PORT (
+  A: in std_logic;
+  IESIRE : OUT STD_LOGIC
+    );
+END activINACTIV;
+
+--------------------------------------------------------------------------------
+--Complete your VHDL description below
+--------------------------------------------------------------------------------
+
+ARCHITECTURE TypeArchitecture OF activINACTIV IS
+
+BEGIN
+
+process(A)
+begin 
+
+if A = '1' then Iesire &lt;= A;
+else Iesire &lt;= '0';
+end if;
+end process;
+
+END TypeArchitecture;
+</vhdl>
+  <vhdl name="and_gate">--------------------------------------------------------------------------------
+-- Project :
+-- File    :
+-- Autor   :
+-- Date    :
+--
+--------------------------------------------------------------------------------
+-- Description :
+--
+--------------------------------------------------------------------------------
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY and_gate IS
+  PORT (
+  A: in std_logic;
+  B:in std_logic;
+  y: out std_logic
+    );
+END and_gate;
+
+--------------------------------------------------------------------------------
+--Complete your VHDL description below
+--------------------------------------------------------------------------------
+
+ARCHITECTURE TypeArchitecture OF and_gate IS
+
+BEGIN
+
+y&lt;= A and B;
+
+END TypeArchitecture;
+</vhdl>
+</project>
